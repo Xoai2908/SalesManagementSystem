@@ -17,7 +17,7 @@ public class SaleService {
                     "Product cannot be null");
         }
 
-        return product.getPrice() + product.getQuantity();
+        return product.getPrice() * product.getQuantity();
     }
 
     public double calculateDiscount(double subtotal) {
